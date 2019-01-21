@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*.js --compilers js:babel-core/register"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "nodemon": "^1.18.9",
     "sharp": "^0.21.3"
+  },
+  "devDependencies": {
+    "flag": "^3.0.0-1",
+    "mocha": "^5.2.0"
   }
 }
