@@ -26,7 +26,7 @@ function checkFilePath(filePath) {
 }
 
 function getInputImage() {
-  let inputtedImage = readline.question('Enter the full file path and name of the image - i.e "C:\\test\\image.jpg": \n\n');
+  let inputtedImage = readline.question('Enter the full file path and name of the existing image - i.e "C:\\test\\image.jpg": \n\n');
   let check = checkFilePath(inputtedImage);
 
   if (check != 1) {

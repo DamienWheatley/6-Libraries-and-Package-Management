@@ -4,7 +4,7 @@ const fs = require('fs');
 describe('Testing Image Paths', function(){
 
     describe('Check Input path', function(){
-        it('Has been entered', () => {
+        it('Is not blank', () => {
             //let inputImage = getInputImage();
             let inputImage = '';
 

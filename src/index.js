@@ -10,7 +10,6 @@ const roundedCornerResizer = sharp()
     .overlayWith(roundedCorners, { cutout: true })
     .png();
 
-    
 //let inputPath = 'C:\\Scripts\\6 Libraries and Package Management\\src\\test-images\\test.jpg'
 //let outputPath = 'C:\\Scripts\\6 Libraries and Package Management\\src\\test-images\\tested2.png'
 
@@ -25,7 +24,7 @@ function checkFilePath(filePath){
 }
 
 function getInputImage(){
-    let inputtedImage = readline.question('Enter the full file path and name of the image - i.e "C:\\test\\image.jpg": \n\n');
+    let inputtedImage = readline.question('Enter the full file path and name of the existing image - i.e "C:\\test\\image.jpg": \n\n');
     let check = checkFilePath(inputtedImage);
     if(check != 1){
         console.log("That file doesn't exist, please enter a file that exists.");
@@ -34,7 +33,6 @@ function getInputImage(){
         return inputtedImage;
     }
 };
-
 
 function getOutputImage(){
     let outputImage = readline.question('Enter the full file path and name of the NEW image - i.e "C:\\test\\image2.jpg": \n\n');
